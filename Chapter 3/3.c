@@ -17,6 +17,6 @@
 
     printf("\nGSI prefix: %d\nGroup identifier: %d\nPublisher code: %d\nItem number: %d\nCheck digit: %d", 
             gsi, group_identifier, publisher_code, item_number, check_digit);
+            
     return 0;
-
    }
