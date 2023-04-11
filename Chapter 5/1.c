@@ -9,7 +9,7 @@ int main() {
     int num = 0;
 
     printf("Enter a number: ");
-    scanf("%4d", &num);
+    scanf("%d", &num);
 
     if(num <= 9) { printf("\nThe number %d has 1 digit", num); }
     else if(num <= 99) { printf("\nThe number %d has 2 digits", num); }
