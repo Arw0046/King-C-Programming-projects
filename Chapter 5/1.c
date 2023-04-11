@@ -6,16 +6,19 @@
 
 int main() {
 
-    int num = 0;
+    int num = 0; int digits = 0;
 
     printf("Enter a number: ");
     scanf("%d", &num);
 
-    if(num <= 9) { printf("\nThe number %d has 1 digit", num); }
-    else if(num <= 99) { printf("\nThe number %d has 2 digits", num); }
-    else if(num <= 999) { printf("\nThe number %d has 3 digits", num); }
-    else if(num <= 9999) { printf("\nThe number %d has 4 digits", num); }
-    else printf("\nI didnt write enough code to figure that number out, sorry.");
+    if( num < 0 || num > 9999) digits = 0;       //first test to see if number is out of range
+    else if(num <= 9) digits = 1;
+    else if(num <= 99) digits = 2; 
+    else if(num <= 999) digits = 3;
+    else digits = 4;
+
+    if(digits > 0) { printf("The number %d has %d digits", num, digits); }
+    else printf("I didnt write enough code to figure that one out, sorry");
 
     return 0;
 }
