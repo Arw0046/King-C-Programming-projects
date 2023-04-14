@@ -5,23 +5,21 @@
 
 int main() {
 
-    int n, d, top_n, gcd,  r;
+    int m, n, num, denom, r;
 
     printf("Enter a fraction: ");
-    scanf("%d/%d", &n, &d);
-    gcd = d;
-    top_n = n;
+    scanf("%d/%d", &m, &n);
 
-    while(top_n != 0) {
-        r = gcd % top_n;
-        gcd = top_n;
-        top_n = r;
+    num = m;
+    denom = n; 
+
+    while(n != 0) {
+        r = m % n;
+        m = n;
+        n = r;
     }
 
-    n /= gcd;
-    d /= gcd;
-
-    printf("In lowest terms: %d/%d", n, d);
+    printf("In lowest terms: %d/%d", num / m ,denom / m);
 
     return 0;
 }

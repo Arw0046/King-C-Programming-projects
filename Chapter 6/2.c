@@ -4,13 +4,10 @@
 #include <stdio.h>
 
 int  main() {
-    int n1, n2, m, n, r;
+    int m, n, r;
 
     printf("Enter two integers: ");
-    scanf("%d %d", &n1, &n2);
-
-    if( n1 < n2) { m = n2; n = n1; }
-    else { m = n1; n = n2; } 
+    scanf("%d %d", &m, &n);
 
     while(n != 0){
         r = m % n;
