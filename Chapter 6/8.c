@@ -12,14 +12,16 @@ int main() {
     printf("Enter starting day of the week(1=Sun, 7=Sat): ");
     scanf("%d", &starting_day);
 
-    for (int i =1; i < starting_day; ++i) printf("   ");
+    printf("Sun\tMon\tTue\tWed\tThu\tFri\tSat\n");
+
+    for (int i =1; i < starting_day; ++i) printf("\t");
 
     for (int i = 1, day_of_week = starting_day; i <= days; ++i) {
         if (day_of_week <= 7) { 
-            printf("%2d ", i);
+            printf("%2d\t", i);
             ++day_of_week;
         }
-        else { printf("\n%2d ", i); day_of_week = 2; }
+        else { printf("\n%2d\t", i); day_of_week = 2; }
     }
 
     return 0;
