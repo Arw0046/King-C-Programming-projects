@@ -5,8 +5,7 @@
 
 int main() {
 
-int c;
-    printf("sizeof(int) = %lu\n", sizeof(c));
+    printf("sizeof(int) = %lu\n", sizeof(int));
     printf("sizeof(short) = %lu\n", sizeof(short));
     printf("sizeof(long) = %lu\n", sizeof(long));
     printf("sizeof(float) = %lu\n", sizeof(float));
