@@ -15,7 +15,7 @@
 int main() {
 
     char c;
-    int letters[26] = {0};
+    int letters[ALPHABET] = {0};
     bool is_anagram = true;
 
     printf("Enter first word: ");
